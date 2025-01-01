@@ -2,10 +2,12 @@ import { z, defineCollection } from "astro:content";
 
 const projectSchema = z.object({
   title: z.string(),
-  authors: z.array(z.string()),
+  authors: z.array(z.string()).optional(),
+  collaborators: z.array(z.string()).optional(),
   conference: z.string(),
   year: z.number(),
-  badge: z.string().optional(),
+  status: z.enum(["published", "paused"]),
+  link: z.string().optional(),
 });
 
 const hlSchema = z.object({

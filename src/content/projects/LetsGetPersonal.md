@@ -12,7 +12,7 @@ authors:
 conference: "VIS 2022"
 year: 2022
 status: "published"
-link:
+link: "../public/pdfs/Bullock2022-PersonalizedViz.pdf"
 ---
 
 🧠 As news sites aim to increase user engagement, how do designers' **structure the personalization of visualizations** and what are the potential impacts?

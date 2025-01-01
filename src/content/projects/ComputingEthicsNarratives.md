@@ -4,7 +4,7 @@ authors: ["Beleicia Bullock", "Fernando L. Nascimento", "Stacy A. Doore"]
 conference: "SIGCSE 2021"
 year: 2021
 status: "published"
-link:
+link: "../public/pdfs/Bullock2021-ComputingEthicsNarratives.pdf"
 ---
 
 🧠 How can we support the **inclusion of ethics** in existing computer science courses?
