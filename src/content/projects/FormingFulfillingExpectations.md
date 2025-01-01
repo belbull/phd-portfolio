@@ -3,7 +3,7 @@ title: "Forming and Fulfilling Expectations: Perspectives of Underrepresented Co
 authors: ["Vidushi Ojha", "Raul Enrique Platero", "Beleicia Bullock"]
 conference: "ASEE 2022"
 year: 2022
-status: "published"
+type: "published"
 link: "../public/pdfs/Ojha2022-FormingFulfillingExpectations.pdf"
 ---
 

@@ -11,7 +11,7 @@ authors:
   ]
 conference: "VIS 2022"
 year: 2022
-status: "published"
+type: "published"
 link: "../public/pdfs/Bullock2022-PersonalizedViz.pdf"
 ---
 

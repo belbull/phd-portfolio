@@ -1,8 +1,8 @@
 ---
 title: "Equitable Recommendations"
-collaborators: ["Beleicia Bullock", "Amar Assad", "Henriette Cramer"]
-conference: "Internship @ Spotify's Trust and Safety
-status: "paused"
+authors: ["Beleicia Bullock", "Amar Assad", "Henriette Cramer"]
+conference: "Internship @ Spotify's Trust and Safety"
+type: "paused"
 year: 2022
 ---
 
