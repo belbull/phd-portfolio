@@ -4,17 +4,12 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import Highlight from "../components/Highlight.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug";
-import PocketBase from "pocketbase";
 
 const hls = (await getCollection("highlights")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 
 const latest = hls.slice(0, 3);
-console.log(latest);
-// const pb = new PocketBase("http://127.0.0.1:8090");
-// const highlights = await pb.collection("highlights").getFullList();
-// console.log(highlights);
 ---
 
 <BaseLayout sideBarActiveItemID="home">

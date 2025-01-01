@@ -1,5 +1,13 @@
 import { z, defineCollection } from "astro:content";
 
+const projectSchema = z.object({
+  title: z.string(),
+  authors: z.array(z.string()),
+  conference: z.string(),
+  year: z.number(),
+  badge: z.string().optional(),
+});
+
 const hlSchema = z.object({
   month: z.string(),
   date: z.coerce.date(),
@@ -37,13 +45,16 @@ const storeSchema = z.object({
 export type HLSchema = z.infer<typeof hlSchema>;
 export type BlogSchema = z.infer<typeof blogSchema>;
 export type StoreSchema = z.infer<typeof storeSchema>;
+export type ProjectSchema = z.infer<typeof projectSchema>;
 
 const hlCollection = defineCollection({ schema: hlSchema });
 const blogCollection = defineCollection({ schema: blogSchema });
 const storeCollection = defineCollection({ schema: storeSchema });
+const projectCollection = defineCollection({ schema: projectSchema });
 
 export const collections = {
   hl: hlCollection,
   blog: blogCollection,
   store: storeCollection,
+  projects: projectCollection,
 };
