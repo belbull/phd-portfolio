@@ -10,11 +10,9 @@ const {
 } = Astro.props;
 const { Content } = await desc.render();
 import { Image } from "astro:assets";
-// const { Content } = await desc.render();
-// const tag_url = link.split("/").slice(0, -1).join("/") + "/tag";
 ---
 
-<div class="rounded-lg bg-base-100">
+<div class="rounded-lg bg-slate-200 my-12 p-6">
   <div class="flex-col md:flex-row">
     {
       img && (
@@ -29,13 +27,11 @@ import { Image } from "astro:assets";
       )
     }
     <div class="grow w-full">
-      <h1 class="text-xl font-bold">
+      <h1 class="text-xl font-bold mb-1">
         {title}
         <!-- {type && <div class="badge badge-secondary mx-2">{type}</div>} -->
       </h1>
-      <p class="py-1 text-1xl">
-        👥 {authors}
-      </p>
+      <p class="py-1 text-1xl">{authors}</p>
       <!-- <div class="card-actions justify-end">
           {
             tags &&
@@ -50,5 +46,7 @@ import { Image } from "astro:assets";
         </div> -->
     </div>
   </div>
-  <Content />
+  <div class="my-4">
+    <Content />
+  </div>
 </div>
