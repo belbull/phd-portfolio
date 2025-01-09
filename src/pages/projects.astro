@@ -5,7 +5,6 @@ import { getCollection } from "astro:content";
 const projects = (await getCollection("projects")).sort(
   (a, b) => b.data.year.valueOf() - a.data.year.valueOf()
 );
-// console.log(projects);
 ---
 
 <BaseLayout

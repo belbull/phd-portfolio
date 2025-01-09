@@ -49,4 +49,14 @@ import { Image } from "astro:assets";
   <div class="my-4">
     <Content />
   </div>
+  <div>
+    {
+      link && (
+        <span>
+          {" "}
+          [<a href={link}> pdf </a>]
+        </span>
+      )
+    }
+  </div>
 </div>
