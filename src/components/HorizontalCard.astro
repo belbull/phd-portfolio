@@ -4,6 +4,9 @@ const {
   img,
   authors,
   link,
+  paper,
+  doi,
+  conference,
   target = "_blank",
   desc,
   fontmatter,
@@ -12,7 +15,7 @@ const { Content } = await desc.render();
 import { Image } from "astro:assets";
 ---
 
-<div class="rounded-lg bg-slate-200 my-12 p-6">
+<div class="rounded-lg my-12">
   <div class="flex-col md:flex-row">
     {
       img && (
@@ -27,21 +30,33 @@ import { Image } from "astro:assets";
       )
     }
     <div class="grow w-full">
-      <h1 class="text-xl font-bold mb-1">
+      <h1 class="text-lg font-bold mb-1">
         {title}
       </h1>
-      <p class="py-1 text-1xl">{authors}</p>
+      <p class="py-1 text-md">{authors}</p>
+      {paper && <p class="py-1 text-md italic">{conference}</p>}
     </div>
   </div>
-  <div class="my-4">
+  <div class="my-1 text-md">
     <Content />
   </div>
   <div>
     {
-      link && (
-        <span>
+      paper && (
+        <span class="mr-1">
           {" "}
-          [<a href={link}> pdf </a>]
+          <a
+            href={link}
+            class="text-blue-600 hover:underline">
+            [ pdf ]
+          </a>
+        </span>
+      <span>
+          <a
+            href={doi}
+            class="text-blue-600 hover:underline">
+            [ doi ]
+          </a>
         </span>
       )
     }

@@ -5,8 +5,10 @@ const projectSchema = z.object({
   authors: z.array(z.string()),
   conference: z.string(),
   year: z.number(),
-  type: z.enum(["published", "paused"]).optional(),
+  type: z.enum(["paper", "project"]),
+  paper: z.coerce.boolean(),
   link: z.string().optional(),
+  doi: z.string().optional(),
 });
 
 const hlSchema = z.object({
@@ -57,5 +59,5 @@ export const collections = {
   hl: hlCollection,
   blog: blogCollection,
   store: storeCollection,
-  projects: projectCollection,
+  work: projectCollection,
 };
