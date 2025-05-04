@@ -11,8 +11,17 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-10 text-left">
-    Research Interests: Human-Computer Interaction, Social Computing, Equitable
-    Design, Black Community Experiences
+    <p class="italic">
+      Research Interests: Human-Computer Interaction, Social Computing,
+      Equitable Design, Black Community Experiences
+    </p>
+    <p class="text-blue-500 mt-5">
+      <a
+        href="../public/pdfs/BullockCV.pdf"
+        target="_blank"
+        >[ Download CV ]</a
+      >
+    </p>
   </div>
 
   <div class="mb-5">
@@ -33,12 +42,12 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       subtitle="Major: Computer Science | Minor: Mathematics"
     />
   </div>
-
-  <div class="mb-5">
+  <hr class="border-1 border-gray-200" />
+  <div class="mt-8 mb-5">
     <div class="text-3xl w-full font-bold">Industry Experience</div>
   </div>
 
-  <div class="time-line-container mb-10">
+  <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
       title="Stanford HAI Tech & Policy Intern @ USAID"
       subtitle="Summer 2023">
@@ -63,67 +72,136 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     </TimeLineElement>
   </div>
 
-  <div class="mb-5">
+  <hr class="border-1 border-gray-200" />
+  <div class="mt-8 mb-5">
+    <div class="text-3xl w-full font-bold">Academic Service</div>
+  </div>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Stanford CS Faculty Search Committee"
+      subtitle="2024 - 2025"
+    />
+    <TimeLineElement
+      title="Stanford CS Department Social Fund Chair"
+      subtitle="2022 - 2023"
+    />
+    <TimeLineElement
+      title="UIUC Grainger Engineering Diversity Commitee"
+      subtitle="2020 - 2021"
+    />
+    <TimeLineElement
+      title="UIUC Grainger Engineering Anti-Racism Task Force"
+      subtitle="Summer 2020"
+    />
+  </div>
+
+  <hr class="border-1 border-gray-200" />
+  <div class="mt-8 mb-5">
+    <div class="text-3xl w-full font-bold">Awards</div>
+  </div>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Stanford Community Impact Award"
+      subtitle="2025"
+    />
+    <TimeLineElement
+      title="Stanford Philanthropy and Civil Society Ph.D. Fellowship"
+      subtitle="2024 - 2025"
+    />
+    <TimeLineElement
+      title="Stanford CCSRE Tech and Racial Equity Graduate Fellowship"
+      subtitle="2022 - 2023"
+    />
+    <TimeLineElement
+      title="Siebel Scholar"
+      subtitle="2021"
+    />
+    <TimeLineElement
+      title="GEM Ph.D. Science Fellowship"
+      subtitle="2021"
+    />
+    <TimeLineElement
+      title="GEM M.S. Science Fellowship"
+      subtitle="2019"
+    />
+  </div>
+
+  <hr class="border-1 border-gray-200" />
+  <div class="mt-8 mb-5">
+    <div class="text-3xl w-full font-bold">Teaching Experience</div>
+  </div>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="UIUC CS210: Ethical and Professional Responsibilities"
+      subtitle="Fall 2019, Spring 2020, Spring 2021">
+      Recevied an excellent rating on the Center for Innovation in Teaching's <span
+        class="italic">
+        Teacher's Ranked as Excellent by Their Students
+      </span> List
+    </TimeLineElement>
+    <TimeLineElement
+      title="UIUC CS598: Social Spaces on the Internet"
+      subtitle="Fall 2020"
+    />
+    <TimeLineElement
+      title="Bowdoin CS1101: Introduction to Computer Science"
+      subtitle="Fall 2019"
+    />
+  </div>
+
+  <hr class="border-1 border-gray-200" />
+  <div class="mt-8 mb-5">
     <div class="text-3xl w-full font-bold">Relevant Courses</div>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
+  <ul class="list-disc mx-6 mb-10 grid gap-4">
     <li>
       <a
-        href="#"
-        target="_blank">
+        href="https://psych252.github.io/"
+        class="text-blue-500 hover:underline">
         PSYCH252: Statistical Methods</a
       >
     </li>
     <li>
       <a
-        href="#"
-        target="_blank">
+        href="https://web.stanford.edu/class/cs329x/"
+        class="text-blue-500 hover:underline">
         CS329X: Human-Centered NLP</a
       >
     </li>
     <li>
       <a
-        href="#"
-        target="_blank">
+        href="https://web.stanford.edu/class/cs329r/"
+        class="text-blue-500 hover:underline">
         CS329R: Race & NLP</a
       >
     </li>
     <li>
       <a
-        href="#"
-        target="_blank">
+        href="https://bulletin.stanford.edu/courses/2232341"
+        class="text-blue-500 hover:underline">
         COMM355: World of Influencers</a
       >
     </li>
     <li>
       <a
-        href="#"
-        target="_blank">
+        href="https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&q=MS%26E%20234:%20Data%20Privacy%20and%20Ethics&academicYear=20172018"
+        class="text-blue-500 hover:underline">
         MSE234: Data Privay & Ethics</a
       >
     </li>
   </ul>
 
-  <div class="mb-5">
+  <hr class="border-1 border-gray-200" />
+  <div class="mt-8 mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc mx-6 mb-10 grid gap-4">
+    <li>Qualitative Analysis</li>
+    <li>Quantitative Analysis</li>
+    <li>Frontend Development</li>
+    <li>Python</li>
+    <li>R</li>
   </ul>
 </BaseLayout>
